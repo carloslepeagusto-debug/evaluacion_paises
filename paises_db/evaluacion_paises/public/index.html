@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Paises</title>
+</head>
+
+<body>
+
+<h1>Administración de Países</h1>
+
+<hr>
+
+<h2>Listar Países</h2>
+
+<select id="limite">
+
+<option value="5">5</option>
+
+<option value="10">10</option>
+
+<option value="20">20</option>
+
+</select>
+
+<button onclick="cargarPaises()">
+Mostrar
+</button>
+
+<button onclick="siguientePagina()">
+Siguiente
+</button>
+
+<pre id="resultado"></pre>
+
+<hr>
+
+<h2>Agregar País</h2>
+
+<input
+id="nombre"
+placeholder="Nombre">
+
+<input
+id="continente"
+placeholder="Continente">
+
+<input
+id="poblacion"
+placeholder="Población">
+
+<input
+id="pib2019"
+placeholder="PIB 2019">
+
+<input
+id="pib2020"
+placeholder="PIB 2020">
+
+<button onclick="agregarPais()">
+Agregar
+</button>
+
+<hr>
+
+<h2>Eliminar País</h2>
+
+<input
+id="nombreEliminar"
+placeholder="Nombre País">
+
+<button onclick="eliminarPais()">
+Eliminar
+</button>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
